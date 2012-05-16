@@ -58,10 +58,14 @@ alias ls='ls -F --color=auto'
 alias rm='rm -i'
 alias -s txt='cat -n'
 
-export JAVA_HOME=/Library/Java/Home
-export JAVA_OPTS='-Dfile.encoding=UTF-8'
-alias javac='javac -J-Dfile.encoding=UTF-8'
-alias java='java -Dfile.encoding=UTF-8'
+case "${OSTYPE}" in
+darwin*)
+	export JAVA_HOME=/Library/Java/Home
+	export JAVA_OPTS='-Dfile.encoding=UTF-8'
+	alias javac='javac -J-Dfile.encoding=UTF-8'
+	alias java='java -Dfile.encoding=UTF-8'
+	;;
+esac
 
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
