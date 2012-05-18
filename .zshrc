@@ -2,6 +2,8 @@ echo .zshrc
 
 bindkey -e
 
+unset SSH_ASKPASS
+
 autoload history-search-end
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
