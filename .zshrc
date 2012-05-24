@@ -1,5 +1,3 @@
-echo .zshrc
-
 bindkey -e
 
 unset SSH_ASKPASS

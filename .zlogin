@@ -1,5 +1,3 @@
-echo .zlogin
-
 case "${OSTYPE}" in
 darwin*)
     brew=/usr/local/bin/brew
