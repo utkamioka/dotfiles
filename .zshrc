@@ -2,6 +2,8 @@ bindkey -e
 
 unset SSH_ASKPASS
 
+export VISUAL=vim
+
 autoload history-search-end
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
