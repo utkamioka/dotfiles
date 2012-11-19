@@ -54,7 +54,7 @@ else
 	zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 fi
 
-alias ls='ls -F --color=auto'
+#alias ls='ls -F --color=auto'
 alias rm='rm -i'
 alias -s txt='cat -n'
 
