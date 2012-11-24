@@ -64,6 +64,8 @@ darwin*)
 	export JAVA_OPTS='-Dfile.encoding=UTF-8'
 	alias javac='javac -J-Dfile.encoding=UTF-8'
 	alias java='java -Dfile.encoding=UTF-8'
+
+	export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21
 	;;
 esac
 
