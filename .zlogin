@@ -11,6 +11,11 @@ if [ -x "$brew" ]; then
 fi
 PATH=~/bin:$PATH
 
-if [ -e ~/android-sdk-linux_x86/tools ]; then
-    PATH=~/android-sdk-linux_x86/tools:$PATH
+if [ -e ~/android-ndk ]; then
+	NDKROOT=~/android-ndk
+    PATH=~/android-ndk:$PATH
+fi
+if [ -e ~/android-sdk ]; then
+	ANDROID_HOME=~/android-sdk
+    PATH=~/android-sdk/tools:~/android-sdk/platform-tools:$PATH
 fi
