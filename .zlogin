@@ -14,3 +14,11 @@ PATH=~/bin:$PATH
 if [ -e ~/android-sdk-linux_x86/tools ]; then
     PATH=~/android-sdk-linux_x86/tools:$PATH
 fi
+
+case "${OSTYPE}" in
+darwin*)
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+    #source ~/.rbenv/completions/rbenv.zsh
+	;;
+esac
