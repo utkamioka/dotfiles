@@ -62,6 +62,9 @@ alias -s txt='cat -n'
 alias W='w3m -T text/html'
 
 case "${OSTYPE}" in
+linux*)
+	export JAVA_HOME=/usr/lib/jvm/sun-java6-sdk
+	;;
 darwin*)
 	export JAVA_HOME=/Library/Java/Home
 	export JAVA_OPTS='-Dfile.encoding=UTF-8'
@@ -71,6 +74,7 @@ darwin*)
 	export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21
 	;;
 esac
+PATH=$JAVA_HOME/bin:$PATH
 
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
