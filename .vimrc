@@ -10,6 +10,8 @@ set tabstop=4
 set smarttab
 set smartindent
 
+colorscheme darkblue
+
 autocmd FileType c      set cindent
 autocmd FileType cpp    set cindent
 autocmd FileType perl   set cindent
